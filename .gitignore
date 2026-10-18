@@ -1,0 +1,13 @@
+# Blender, Unity, dan file build tidak masuk repo
+*.blend1
+*.blend2
+Library/
+Temp/
+Obj/
+Build/
+*.unitypackage
+*.unityproj
+.vs/
+.idea/
+__pycache__/
+node_modules/
