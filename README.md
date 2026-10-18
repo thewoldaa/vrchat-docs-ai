@@ -5,19 +5,30 @@ Dokumentasi open-source yang dirancang agar **AI (LLM)** memahami secara mendala
 ## Struktur
 
 ```
-docs/                     # Dokumentasi riset lengkap (sumber utama)
+docs/                          # Dokumentasi riset lengkap (sumber utama)
+  3d-model-pipeline.md         # Pipeline model 3D: Blender, UV, PBR, format, optimasi, shader
+  vrchat-worlds.md             # VRChat World: Unity/VCC, Udon, komponen, limits, upload
+  vrchat-avatars.md            # VRChat Avatar: AV3, PhysBone, expressions, rank limits
+  vrchat-ecosystem.md          # Platform: trust rank, TOS, economy, tools, roadmap
 skills/
-  vrchat-world/           # Skill AI: pembuatan & debugging VRChat World
-  vrchat-avatar/          # Skill AI: pembuatan & debugging VRChat Avatar
-  vrchat-3d-model/        # Skill AI: pipeline model 3D (Blender, format, tekstur, optimasi)
+  vrchat-world/SKILL.md        # Skill AI: pembuatan & debugging VRChat World
+  vrchat-avatar/SKILL.md       # Skill AI: pembuatan & debugging VRChat Avatar
+  vrchat-3d-model/SKILL.md     # Skill AI: pipeline model 3D
 ```
 
-## Tujuan
+## Cara pakai
 
-Menjadi referensi open-source terbaik untuk AI yang membantu:
-- Membuat world VRChat dari nol (Udon, Unity, SDK3)
-- Membuat & mengoptimasi avatar VRChat (Avatar 3.0, PhysBone, expressions)
-- Memahami pipeline model 3D untuk platform VR/sosial
+Setiap `SKILL.md` berisi ringkasan padat + quick rules + gotchas; file `docs/` adalah referensi mendalam. Berikan keduanya ke AI, atau instal folder `skills/` ke Claude Code / agent lain.
+
+## Untuk siapa
+
+- AI yang membantu membuat world VRChat (Udon, Unity, SDK3)
+- AI yang membantu membuat/mengoptimasi avatar (Avatar 3.0, PhysBone, expressions, Quest)
+- Siapa pun yang memahami pipeline model 3D untuk platform real-time/VR
+
+## Pembaruan data
+
+Riset terakhir: Oktober 2026 (Unity 2022.3.22f1, SDK 3.9–3.10.x). Dunia VRChat berubah cepat — cek https://creators.vrchat.com/releases/ untuk versi terbaru.
 
 ## Lisensi
 
