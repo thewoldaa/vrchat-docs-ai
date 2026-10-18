@@ -7,8 +7,12 @@ Dokumentasi open-source yang dirancang agar **AI (LLM)** memahami secara mendala
 ```
 docs/                          # Dokumentasi riset lengkap (sumber utama)
   3d-model-pipeline.md         # Pipeline model 3D: Blender, UV, PBR, format, optimasi, shader
+  blender-workflow.md          # Blender deep-dive: rigging, viseme, FBX, VRM/MMD, troubleshooting
   vrchat-worlds.md             # VRChat World: Unity/VCC, Udon, komponen, limits, upload
+  udonsharp-cookbook.md        # Kode UdonSharp lengkap: 12 contoh + networking patterns
   vrchat-avatars.md            # VRChat Avatar: AV3, PhysBone, expressions, rank limits
+  av3-recipes.md               # Resep AV3 hands-on: toggle, WD, blend trees, contacts, FBT
+  optimization-deep-dive.md    # Texture memory math, quest conversion, decision trees
   vrchat-ecosystem.md          # Platform: trust rank, TOS, economy, tools, roadmap
 skills/
   vrchat-world/SKILL.md        # Skill AI: pembuatan & debugging VRChat World

@@ -5,7 +5,7 @@ description: Membuat, mengedit, dan debugging VRChat World dengan Unity + SDK3 +
 
 # VRChat World Skill
 
-Referensi lengkap: `docs/vrchat-worlds.md` (sumber utama, baca bila butuh detail).
+Referensi lengkap: `docs/vrchat-worlds.md` (overview) dan `docs/udonsharp-cookbook.md` (kode UdonSharp lengkap siap pakai — toggle, pintu, teleport, launcher, video queue, sync patterns, debugging).
 
 ## Environment (2025–2026)
 
