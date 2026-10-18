@@ -18,7 +18,7 @@
 
 ### 1.3 SDK3 (Worlds SDK) & Project Structure
 
-- SDK3 = the current SDK generation (SDK2 uploads were **permanently switched off November 3, 2025** — old SDK2 content still loads but can no longer be updated).
+- SDK3 = the current SDK generation (SDK2 uploads were **permanently switched off November 3, 2025** — the blocking was announced/enforced across Oct–Nov 2025; old SDK2 content still loads but can no longer be updated).
 - A typical worlds project contains:
   - `Packages/com.vrchat.worlds/` — the Worlds SDK (inspectors, prefabs, example scene at `Samples/UdonExampleScene/`).
   - `Packages/com.vrchat.base/` — the Base SDK (shared components).
@@ -123,7 +123,7 @@ Source: https://creators.vrchat.com/platforms/android/quest-content-limitations/
 - **Audio Sources**: allowed in worlds; disabled on avatars.
 - **Rigidbodies/colliders/joints**: allowed, use moderately.
 - **Shaders on Android worlds**: worlds can use custom shaders on Android (unlike avatars) — performance is your responsibility. SDK mobile world shaders: `Lightmapped`, `Skybox`, `Supersampled UI`; **`VRChat/Mobile/Toon Standard` arrived in SDK 3.8.1** (Outline variant PC-only).
-- **iOS**: supported since 2025; SDK 3.8.1 added iOS Build & Test and per-platform overrides.
+- **iOS**: SDK iOS build/upload support began late 2024; SDK 3.8.1 added iOS Build & Test and per-platform overrides; full phone release October 2025.
 
 ## 6. Upload Pipeline
 

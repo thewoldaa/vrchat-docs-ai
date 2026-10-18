@@ -8,7 +8,7 @@
 
 ### 1.1 Environment: VCC + Unity 2022.3.22f1
 
-- **Current Unity version: 2022.3.22f1** (pinned LTS; Client 2026.3.x, Avatars SDK 3.10.5, Worlds SDK 3.10.4, VCC 2.4.5+). Do **not** upgrade Unity — content built on other versions won't load.
+- **Current Unity version: 2022.3.22f1** (pinned LTS; version numbers below were current at research time and drift — verify in VCC). Do **not** upgrade Unity — content built on other versions won't load.
 - **VCC** installs Unity, manages packages via **VPM**, creates Avatar/World templates. Windows 10/11 64-bit full support.
 - Workflow: VCC → Create New Project → **Avatars** template → add packages (Modular Avatar, AAO, VRCFury, Poiyomi, lilToon) → Open Project.
 - In Unity: `VRChat SDK → Show Control Panel` for auth, build, and performance-rank display. Install Unity with **Android Build Support** (+ iOS).
@@ -52,7 +52,7 @@ Order: Base → Additive → Gesture → Action → FX; later overrides earlier.
 
 ### 2.2 Parameters & Sync
 
-- **Built-in** (free, read-only): `Viseme` (int 0–14), `Voice` (float), `GestureLeft/Right` (int 0–8: Neutral, Fist, HandOpen, FingerPoint, Victory, RockNRoll, HandGun, ThumbsUp), `GestureLeft/RightWeight`, `VelocityX/Y/Z` + `VelocityMagnitude`, `Upright`, `AngularY`, `Grounded`, `InStation`, `Seated`, `AFK`, `TrackingType`, `ExpressionMode`, `MuteSelf`, `InMute`, `Earmuffs`, `IsLocal`, `IsOnFriendsList`, `SuppressRemoteVoice`, scale params `ScaleFactor`, `ScaleFactorInverse`, `EyeHeightAsMeters`, `EyeHeightAsPercent`.
+- **Built-in** (free, read-only): `Viseme` (int 0–14), `Voice` (float), `GestureLeft/Right` (int **0–7**: Neutral, Fist, HandOpen, FingerPoint, Victory, RockNRoll, HandGun, ThumbsUp), `GestureLeft/RightWeight`, `VelocityX/Y/Z` + `VelocityMagnitude`, `Upright`, `AngularY`, `Grounded`, `InStation`, `Seated`, `AFK`, `TrackingType`, `ExpressionMode`, `MuteSelf`, `InMute`, `Earmuffs`, `IsLocal`, `IsOnFriendsList`, `SuppressRemoteVoice`, scale params `ScaleFactor`, `ScaleFactorInverse`, `EyeHeightAsMeters`, `EyeHeightAsPercent`.
 - **Custom** in an **Expression Parameters** asset (`VRCExpressionParameters`): name, type, default, **Saved** + **Synced** flags. Writable by: menus, Parameter Drivers, PhysBones, Contact Receivers, OSC.
 
 ### 2.3 The 256-bit budget
@@ -150,7 +150,7 @@ All GameObjects/Components count, **including disabled ones**. Disabling Mesh Re
 | Particle Systems | 0 | 0 | 0 | 2 (200 active, 400 polys) |
 | Trail/Line Renderers | 0 | 0 | 0 | 1 |
 
-**Download size**: ~500 MB PC / ~200 MB mobile hard caps (version-dependent, verify in SDK); mobile practical guideline ~40 MB uncompressed / ~10 MB compressed — Toon Standard's texture set frequently busts this → mask packing + atlasing essential.
+**Download size**: hard caps are **PC: 200 MB download / 500 MB uncompressed; Android/iOS: 10 MB download / 40 MB uncompressed** (enforced in SDK 3.5.2 Android / 3.7.0 PC). Mobile practical guideline: 5–8 MB total — Toon Standard's texture set frequently busts this → mask packing + atlasing essential.
 
 **Fallback avatars**: must be Good+ by Android limits, uploaded first on Android with "Is a Fallback" flag, then re-uploaded on Windows/iOS to the same blueprint ID. Impostors (auto-generated) show before fallbacks when the avatar is merely missing for your platform.
 

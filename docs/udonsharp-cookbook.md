@@ -703,7 +703,7 @@ All are `public override` methods on `UdonSharpBehaviour`.
 
 ## 6. Debugging
 
-**Logging:** `Debug.Log/LogWarning/LogError` — string interpolation `$"..."` supported. Logs appear in the Unity console (ClientSim) and in `%LOCALAPPDATA%..\..\LocalLow\VRChat\VRChat\output_log_*.txt` for test builds.
+**Logging:** `Debug.Log/LogWarning/LogError` — string interpolation `$"..."` supported. Logs appear in the Unity console (ClientSim) and in the client output log at `%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\output_log_*.txt` for test builds.
 
 **ClientSim** runs your world in editor Play Mode with a fake player. It's single-player — ownership races and event ordering behave differently than live, so final testing needs **two VRChat clients**.
 

@@ -50,8 +50,9 @@ NDMF abstracts the platform: `PlatformInit`/`PlatformFinish` and platform backen
 | Platform | Download | Uncompressed |
 |---|---|---|
 | PC avatar | 200 MB | 500 MB |
-| Android avatar | 10 MB | 40 MB |
-| Android world | 100 MB | — (PC worlds effectively unlimited) |
+| Android/iOS avatar | 10 MB | 40 MB |
+| Android world | 100 MB | — |
+| PC world | ~500 MB | ~1.2 GB (guidance: keep Public worlds well under this — Community Labs reviewers favor <200 MB) |
 
 Historical: PC limits (previously 500 MB/1.2 GB) tightened mid-2024, enforced from SDK 3.7.0; Android uncompressed enforced 3.5.2. Rule of thumb for Android: 5–8 MB total.
 
@@ -91,7 +92,7 @@ The `VRCPipelineManager` component (auto-added alongside the Avatar Descriptor /
 ## 7. Build Caching & Slowness
 
 - The SDK builds a single bundle for the whole avatar/world, defeating Unity's per-bundle incremental rebuild — nearly everything rebuilds each time. Slowness sources: **texture re-encoding** (crunch and ASTC are extremely slow), **shader compilation** (`Library/ShaderCache`; corrupted caches cause hard failures fixed by deleting `Library`), **lightmap recompression** (worlds), **NDMF passes** (generated assets rebuilt each build; NDMF plans cross-build caching), **platform switches** (PC↔Android re-imports everything — Unity's local **Cache Server** makes subsequent switches far faster).
-- **Cache locations:** Unity import caches `Library/`; shader cache `Library/ShaderCache/`; the *client's* bundle cache under `%LocalAppData%Low\VRChat\VRChat\` (hashed dirs per asset ID + version). Build & Test avatars → `%LocalAppData%Low\VRChat\VRChat\Avatars`.
+- **Cache locations:** Unity import caches `Library/`; shader cache `Library/ShaderCache/`; the *client's* bundle cache under `%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\` (hashed dirs per asset ID + version). Build & Test avatars → `%USERPROFILE%\AppData\LocalLow\VRChat\VRChat\Avatars`.
 - **Stale builds:** a rebuilt world still loading the old version usually = broken shader or corrupted cache; remedies: delete `Library/`, reinstall SDK, clear the VRChat cache.
 
 ## 8. Multi-Platform Build Internals

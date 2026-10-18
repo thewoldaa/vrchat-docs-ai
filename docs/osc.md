@@ -16,7 +16,7 @@ VRChat.exe --osc=inPort:senderIP:outPort
 
 Default ≈ `--osc=9000:127.0.0.1:9001`. To drive VRChat from a LAN device (TouchOSC tablet at 192.168.1.42): `--osc=9000:192.168.1.42:9001`.
 
-**Enabling OSC:** off by default. Enable in-game: Action Menu → **OSC → Enabled**. The **OSC Debug** screen (OSC → OSC Debug) visualizes incoming messages in real time — invaluable for verifying packets arrive. VRCFaceTracking tries to flip the toggle automatically, but enable it manually to avoid a game restart.
+**Enabling OSC:** off by default. Enable in-game via the menu system (**Quick Menu → Settings → OSC → Enabled**; the wiki also documents Action Menu → OSC — the exact path has shifted across client versions). The **OSC Debug** screen visualizes incoming messages in real time. Note OSCQuery discovery (TCP, plus UDP 5353 mDNS) lets tools auto-discover parameters. Third-party tools like VRCFaceTracking may attempt to flip the toggle automatically, but enable it manually to avoid a game restart.
 
 Sources: https://creators.vrchat.com/worlds/osc/ · https://wiki.vrchat.com/wiki/OSC
 

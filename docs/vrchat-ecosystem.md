@@ -158,7 +158,7 @@ No official VRChat AI-generation features as of early 2026. AI textures/voice fe
 
 **SDK/Unity**: SDK 3.9.x; Unity **2022.3.22f1** (upgrading breaks uploads).
 
-**iOS**: full launch (App Store), uploads since SDK 3.8.1.
+**iOS**: launch and SDK iOS build/upload support began **late 2024**; SDK 3.8.1 (May 2025) added **iOS Build & Test** and per-platform overrides; full App Store phone release October 2025.
 
 **Roadmap** (Mar 2026):
 - **Soba** — successor to Udon (C#-feature-parity; closed beta upcoming)
