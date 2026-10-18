@@ -5,7 +5,7 @@ description: Membuat, mengedit, dan debugging VRChat Avatar — Avatar 3.0, FX a
 
 # VRChat Avatar Skill
 
-Referensi lengkap: `docs/vrchat-avatars.md` (overview), `docs/av3-recipes.md` (resep AV3 langkah demi langkah — toggle dari nol, radial puppet, direct blend trees, WD, PhysBone, FBT), dan `docs/optimization-deep-dive.md` (optimasi), `docs/vrchat-ecosystem.md` (platform/rules).
+Referensi lengkap: `docs/vrchat-avatars.md` (overview), `docs/av3-recipes.md` (resep AV3 langkah demi langkah), `docs/ma-vrcfury-ecosystem.md` (MA/VRCFury/AAO complete reference), `docs/shaders.md` (lilToon/Poiyomi/Toon Standard), `docs/avatar-troubleshooting.md` (symptom→fix index), `docs/avatar-design-patterns.md` (desain & base ecosystem), `docs/testing-qa.md` (test workflow & emulators), `docs/optimization-deep-dive.md` (optimasi), `docs/vrchat-ecosystem.md` (platform/rules), `docs/glossary.md` (jargon).
 
 ## Environment (2025–2026)
 

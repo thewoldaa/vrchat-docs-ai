@@ -5,7 +5,7 @@ description: Pipeline model 3D untuk platform VR/sosial — Blender modeling, ri
 
 # VRChat 3D Model Skill
 
-Referensi lengkap: `docs/3d-model-pipeline.md` (fundamental) dan `docs/blender-workflow.md` (workflow Blender lengkap: rigging, viseme, FBX panel-per-panel, VRM/MMD, troubleshooting) serta `docs/optimization-deep-dive.md` (texture memory math, quest conversion, decision trees).
+Referensi lengkap: `docs/3d-model-pipeline.md` (fundamental), `docs/blender-workflow.md` (workflow Blender lengkap + troubleshooting), `docs/shaders.md` (lilToon/Poiyomi/Toon Standard), `docs/optimization-deep-dive.md` (texture memory math, quest conversion, decision trees), `docs/glossary.md` (jargon).
 
 ## Quick rules
 
